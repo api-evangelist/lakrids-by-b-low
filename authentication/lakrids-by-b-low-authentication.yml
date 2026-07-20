@@ -1,0 +1,50 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of https://lakridsbybulow.com
+docs: https://developer.bigcommerce.com/docs/storefront/graphql
+x-platform-provided: true
+x-platform: bigcommerce-stencil
+notes: >-
+  LAKRIDS BY BÜLOW publishes no developer program and no first-party API
+  documentation. The auth model below belongs to the BigCommerce Stencil
+  storefront platform the brand runs on, observed live on the brand's own host.
+  It is recorded as probed evidence, not as a vendor claim by LAKRIDS BY BÜLOW.
+summary:
+  types:
+  - http
+  api_key_in: []
+  oauth2_flows: []
+schemes:
+- name: storefrontToken
+  type: http
+  scheme: bearer
+  endpoint: https://lakridsbybulow.com/graphql
+  description: >-
+    The BigCommerce Storefront GraphQL API requires a storefront API token sent
+    as a bearer credential. Probed unauthenticated and rejected.
+  evidence:
+  - method: POST
+    url: https://lakridsbybulow.com/graphql
+    status: 401
+    body: 'errors[0].message: "GraphQL credentials were missing. No token was sent."'
+  - method: GET
+    url: https://lakridsbybulow.com/graphql
+    status: 405
+  docs: https://developer.bigcommerce.com/docs/storefront/graphql
+- name: sessionCookie
+  type: apiKey
+  in: cookie
+  cookie_names:
+  - SHOP_SESSION_TOKEN
+  - SF-CSRF-TOKEN
+  endpoint: https://lakridsbybulow.com/api/storefront
+  description: >-
+    The BigCommerce Storefront REST API is session-scoped to the shopper's
+    browser session; it returned 200 to an unauthenticated probe with an empty
+    cart collection rather than an auth challenge.
+  evidence:
+  - method: GET
+    url: https://lakridsbybulow.com/api/storefront/carts
+    status: 200
+    body: '[]'
+  docs: https://developer.bigcommerce.com/docs/rest-storefront
