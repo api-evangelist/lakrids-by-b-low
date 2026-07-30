@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of https://lakridsbybulow.com
+host: https://lakridsbybulow.com
+found: none
+notes: >-
+  Every /.well-known/ discovery document was probed and returned 404. This is a
+  recorded negative result, not a gap in the harvest. No WellKnown or SecurityTxt
+  pointer is wired in apis.yml because no document is genuinely published.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404

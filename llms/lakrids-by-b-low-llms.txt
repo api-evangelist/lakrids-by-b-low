@@ -1,0 +1,45 @@
+# LAKRIDS BY BÜLOW
+
+> Danish gourmet liquorice maker founded by Johan Bülow in Svaneke, Bornholm on 07.07.2007. Trades as Lakrids by Johan Bülow A/S (CVR 33041586), Sydholmen 5, 2650 Hvidovre, Denmark. Sells plain and chocolate-coated liquorice direct to consumers across Europe and through retail partners, concept stores and B2B/corporate gifting.
+
+## Status
+
+LAKRIDS BY BÜLOW does not operate a public developer program. There is no
+first-party API documentation, no developer portal, no SDKs in any public
+package registry, and no published OpenAPI, AsyncAPI or MCP surface. Its
+website runs on the BigCommerce Stencil platform, whose storefront APIs are
+reachable on the brand's own host but are documented by BigCommerce, not by
+LAKRIDS BY BÜLOW.
+
+## APIs
+
+- [BigCommerce Storefront GraphQL API](https://developer.bigcommerce.com/docs/storefront/graphql): platform-provided GraphQL endpoint at https://lakridsbybulow.com/graphql. Requires a storefront bearer token; probed unauthenticated and rejected with 401.
+- [BigCommerce Storefront REST API](https://developer.bigcommerce.com/docs/rest-storefront): platform-provided REST surface at https://lakridsbybulow.com/api/storefront. Session-scoped to the shopper's browser session.
+
+## Artifacts
+
+- [Authentication profile](authentication/lakrids-by-b-low-authentication.yml): probed auth model for the storefront endpoints.
+- [Domain security](security/lakrids-by-b-low-domain-security.yml): TLS, HSTS, DNSSEC, CAA, SPF and DMARC probe results.
+- [Well-known index](well-known/lakrids-by-b-low-well-known.yml): recorded negative result — every /.well-known/ document returned 404.
+
+## Site
+
+- [Website](https://lakridsbybulow.com/)
+- [Our story](https://lakridsbybulow.com/brand/our-story)
+- [All products](https://lakridsbybulow.com/all-products)
+- [Find a store](https://lakridsbybulow.com/find-a-store)
+- [Help and contact](https://lakridsbybulow.com/help-and-contact)
+- [Blog](https://lakridsbybulow.com/blog)
+- [Press](https://lakridsbybulow.com/brand/press)
+- [Sustainability](https://lakridsbybulow.com/brand/sustainability)
+- [Annual report](https://lakridsbybulow.com/annual-report)
+- [Become a retailer](https://lakridsbybulow.com/become-a-retailer)
+- [Company solutions](https://lakridsbybulow.com/company-solutions)
+- [Terms and conditions](https://lakridsbybulow.com/terms-conditions)
+- [Privacy](https://lakridsbybulow.com/privacy)
+- [Imprint](https://lakridsbybulow.com/imprint)
+
+## Contact
+
+- service@lakridsbybulow.com
+- +45 89 88 10 25
