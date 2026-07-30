@@ -1,22 +1,82 @@
 aid: lakrids-by-b-low
-name: lakrids by bülow
-description: 'lakrids by bülow is a company surfaced as a portfolio company of idg-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+name: LAKRIDS BY BÜLOW
+description: >-
+  LAKRIDS BY BÜLOW is a Danish gourmet liquorice maker founded by Johan Bülow,
+  who opened his first shop in Svaneke on the island of Bornholm on 07.07.2007
+  and built the brand by cooking liquorice on-site so the aroma drew customers
+  in. Trading as Lakrids by Johan Bülow A/S (CVR 33041586) from Sydholmen 5,
+  2650 Hvidovre, Denmark, the company makes plain and chocolate-coated
+  liquorice — its flagship being "A - THE ORIGINAL", a gluten-free sweet
+  liquorice core coated in milk chocolate — and sells direct to consumers
+  across Europe alongside concept stores, retail partners and a B2B corporate
+  gifting business. The company operates no public developer program: its
+  storefront runs on the BigCommerce Stencil platform, and the only API surface
+  reachable on its own host is platform-provided and documented by BigCommerce.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn11.bigcommerce.com/s-mg3wopji0l/images/stencil/135x100/lakrids_by_bulow_logo_bc_1716910874__14291.original.png
 url: https://raw.githubusercontent.com/api-evangelist/lakrids-by-b-low/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - idg-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-no-developer-program
+x-legal-entity: Lakrids by Johan Bülow A/S
+x-company-number: CVR 33041586
+x-headquarters: Sydholmen 5, 2650 Hvidovre, Denmark
+x-founded: '2007'
+x-ecommerce-platform: bigcommerce-stencil
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
-apis: []
+- Consumer Goods
+- Food and Beverage
+- Confectionery
+- Retail
+- E-Commerce
+- Denmark
+apis:
+- name: BigCommerce Storefront GraphQL API (platform-provided)
+  description: >-
+    The BigCommerce Storefront GraphQL API as exposed on the LAKRIDS BY BÜLOW
+    host. This is platform infrastructure supplied by BigCommerce Stencil, not a
+    first-party API published by LAKRIDS BY BÜLOW, and it is documented by
+    BigCommerce. Recorded here because the endpoint is genuinely reachable on
+    the brand's own domain. Requires a storefront bearer token.
+  humanURL: https://developer.bigcommerce.com/docs/storefront/graphql
+  baseURL: https://lakridsbybulow.com/graphql
+  x-platform-provided: true
+  x-probe-status: 401 unauthenticated POST; 405 GET
+  properties:
+  - type: Authentication
+    url: authentication/lakrids-by-b-low-authentication.yml
+- name: BigCommerce Storefront REST API (platform-provided)
+  description: >-
+    The BigCommerce Storefront REST API as exposed on the LAKRIDS BY BÜLOW host,
+    session-scoped to the shopper's browser session. Platform infrastructure
+    supplied by BigCommerce Stencil and documented by BigCommerce, not a
+    first-party API published by LAKRIDS BY BÜLOW.
+  humanURL: https://developer.bigcommerce.com/docs/rest-storefront
+  baseURL: https://lakridsbybulow.com/api/storefront
+  x-platform-provided: true
+  x-probe-status: 200 on /carts
+  properties:
+  - type: Authentication
+    url: authentication/lakrids-by-b-low-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +85,40 @@ maintainers:
 common:
 - type: Website
   url: https://lakridsbybulow.com/
+- type: Blog
+  url: https://lakridsbybulow.com/blog
+- type: Support
+  url: https://lakridsbybulow.com/help-and-contact
+- type: HelpCenter
+  url: https://lakridsbybulow.com/help
+- type: TermsOfService
+  url: https://lakridsbybulow.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://lakridsbybulow.com/privacy
+- type: SignUp
+  url: https://lakridsbybulow.com/login.php
+- type: About
+  url: https://lakridsbybulow.com/brand/our-story
+- type: Press
+  url: https://lakridsbybulow.com/brand/press
+- type: Sustainability
+  url: https://lakridsbybulow.com/brand/sustainability
+- type: AnnualReport
+  url: https://lakridsbybulow.com/annual-report
+- type: Locations
+  url: https://lakridsbybulow.com/find-a-store
+- type: Partners
+  url: https://lakridsbybulow.com/become-a-retailer
+- type: Contact
+  url: https://lakridsbybulow.com/help-and-contact
+- type: Authentication
+  url: authentication/lakrids-by-b-low-authentication.yml
+- type: DomainSecurity
+  url: security/lakrids-by-b-low-domain-security.yml
+- type: LLMsTxt
+  url: llms/lakrids-by-b-low-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
