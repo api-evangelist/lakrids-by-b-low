@@ -37,7 +37,7 @@ x-company-number: CVR 33041586
 x-headquarters: Sydholmen 5, 2650 Hvidovre, Denmark
 x-founded: '2007'
 x-ecommerce-platform: bigcommerce-stencil
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
