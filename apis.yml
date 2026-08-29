@@ -12,6 +12,17 @@ description: >-
   gifting business. The company operates no public developer program: its
   storefront runs on the BigCommerce Stencil platform, and the only API surface
   reachable on its own host is platform-provided and documented by BigCommerce.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
