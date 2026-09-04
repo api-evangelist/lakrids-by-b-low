@@ -25,15 +25,16 @@ deliveryModel:
   method: derived
 accessModel:
   pricing: unknown
-  onboarding: self-serve
+  onboarding: unknown
   trial: false
   try_now: false
   public: false
-  label: Self-serve signup
-  confidence: medium
+  label: Unknown
+  confidence: low
   source:
   - authentication
-  generated: '2026-07-22'
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://cdn11.bigcommerce.com/s-mg3wopji0l/images/stencil/135x100/lakrids_by_bulow_logo_bc_1716910874__14291.original.png
 url: https://raw.githubusercontent.com/api-evangelist/lakrids-by-b-low/refs/heads/main/apis.yml
