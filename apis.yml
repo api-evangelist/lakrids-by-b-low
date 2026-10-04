@@ -76,6 +76,9 @@ apis:
   properties:
   - type: Authentication
     url: authentication/lakrids-by-b-low-authentication.yml
+  x-surface: platform-generated
+  x-platform: bigcommerce
+  x-platform-surface: storefront-graphql
 - name: BigCommerce Storefront REST API (platform-provided)
   description: >-
     The BigCommerce Storefront REST API as exposed on the LAKRIDS BY BÜLOW host,
@@ -89,6 +92,9 @@ apis:
   properties:
   - type: Authentication
     url: authentication/lakrids-by-b-low-authentication.yml
+  x-surface: platform-generated
+  x-platform: bigcommerce
+  x-platform-surface: storefront-rest
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
