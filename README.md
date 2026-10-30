@@ -64,21 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LAKRIDS BY BÜLOW is a Danish gourmet liquorice maker founded by Johan Bülow, who opened his first shop in Svaneke on the island of Bornholm on 07.07.2007. Trading as Lakrids by Johan Bülow A/S (CVR 33041586) from Sydholmen 5, 2650 Hvidovre, Denmark, the company makes plain and chocolate-coated liquorice and sells direct to consumers across Europe alongside concept stores, retail partners and a B2B corporate gifting business.
+LAKRIDS BY BÜLOW is a Danish gourmet liquorice maker founded by Johan Bülow, who opened his first shop in Svaneke on the island of Bornholm on 07.07.2007 and built the brand by cooking liquorice on-site so the aroma drew customers in. Trading as Lakrids by Johan Bülow A/S (CVR 33041586) from Sydholmen 5, 2650 Hvidovre, Denmark, the company makes plain and chocolate-coated liquorice — its flagship being "A - THE ORIGINAL", a gluten-free sweet liquorice core coated in milk chocolate — and sells direct to consumers across Europe alongside concept stores, retail partners and a B2B corporate gifting business. The company operates no public developer program: its storefront runs on the BigCommerce Stencil platform, and the only API surface reachable on its own host is platform-provided and documented by BigCommerce.
 
-Website: https://lakridsbybulow.com/ — backed by: idg-capital
+**Areas:** Company · Consumer · Consumer Goods · Food and Beverage · Confectionery · Retail · E-Commerce · Denmark
 
-## API posture
+## LAKRIDS BY BÜLOW on APIs.io
 
-LAKRIDS BY BÜLOW operates **no public developer program**. There is no first-party API documentation, no developer portal, no SDKs in any public package registry (npm, PyPI, RubyGems and crates.io all checked — nothing), and no published OpenAPI, AsyncAPI or MCP surface. Every `/.well-known/` discovery document returns 404.
+Everything profiled for LAKRIDS BY BÜLOW is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lakrids-by-b-low/](https://apis.io/providers/lakrids-by-b-low/)** — or go straight to one of the APIs or properties below.
 
-The storefront runs on **BigCommerce Stencil**. The BigCommerce Storefront GraphQL and REST APIs are genuinely reachable on the brand's own host and are catalogued here as *platform-provided* — they are documented by BigCommerce, not by LAKRIDS BY BÜLOW.
+### APIs (2)
 
-## Artifacts
+- [BigCommerce Storefront GraphQL API (platform-provided)](https://apis.io/apis/lakrids-by-b-low/bigcommerce-storefront-graphql-api-platform-provided/) — The BigCommerce Storefront GraphQL API as exposed on the LAKRIDS BY BÜLOW host. This is platform infrastructure supplied by BigCommerce Stencil, not a…
+- [BigCommerce Storefront REST API (platform-provided)](https://apis.io/apis/lakrids-by-b-low/bigcommerce-storefront-rest-api-platform-provided/) — The BigCommerce Storefront REST API as exposed on the LAKRIDS BY BÜLOW host, session-scoped to the shopper's browser session. Platform infrastructure…
 
-| Artifact | File |
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lakrids By B Low Authentication](https://apis.io/security/lakrids-by-b-low/lakrids-by-b-low-authentication/)
+- [Lakrids By B Low Domain Security](https://apis.io/security/lakrids-by-b-low/lakrids-by-b-low-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://lakridsbybulow.com/)
+- [Sign up](https://lakridsbybulow.com/login.php)
+- [Support](https://lakridsbybulow.com/help-and-contact)
+- [Blog](https://lakridsbybulow.com/blog)
+- [Terms of service](https://lakridsbybulow.com/terms-conditions)
+- [Privacy policy](https://lakridsbybulow.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 18.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Authentication (probed) | `authentication/lakrids-by-b-low-authentication.yml` |
-| Domain security (probed) | `security/lakrids-by-b-low-domain-security.yml` |
-| Well-known index (negative result) | `well-known/lakrids-by-b-low-well-known.yml` |
-| llms.txt (generated) | `llms/lakrids-by-b-low-llms.txt` |
+| Discoverability | 74.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 34.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lakrids-by-b-low/](https://apis.io/providers/lakrids-by-b-low/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LAKRIDS BY BÜLOW: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lakrids-by-b-low/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
